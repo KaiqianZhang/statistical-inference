@@ -1,0 +1,18 @@
+---
+title: "Poisson distribution"
+author: "Kaiqian Zhang"
+date: "5/31/2019"
+output:
+  workflowr::wflow_html:
+    toc: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+- `Recursion relation`: if $X$ is Poisson($\lambda$), then 
+$$
+P(X = x+1) = \frac{\lambda}{x+1}P(X=x).
+$$
+

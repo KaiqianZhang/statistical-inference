@@ -6,4 +6,10 @@ output:
     toc: false
 ---
 
-Welcome to my research website.
+Welcome to my website for statistical inference.
+
+## Distributions
+
+- [Poisson distribution](poisson.html)
+
+

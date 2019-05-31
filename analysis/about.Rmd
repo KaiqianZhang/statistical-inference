@@ -5,4 +5,8 @@ output:
     toc: false
 ---
 
-Describe your project.
+- Record necessary statistical concepts and useful tools for research.
+
+- Learning notes from Statistical Inference written by George Casella and Roger L. Berger.
+
+

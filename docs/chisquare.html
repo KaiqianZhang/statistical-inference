@@ -12,7 +12,7 @@
 <meta name="author" content="Kaiqian Zhang" />
 
 
-<title>Poisson distribution</title>
+<title>Chi square distribution</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -217,9 +217,9 @@ div.section {
 
 
 
-<h1 class="title toc-ignore">Poisson distribution</h1>
+<h1 class="title toc-ignore">Chi square distribution</h1>
 <h4 class="author"><em>Kaiqian Zhang</em></h4>
-<h4 class="date"><em>5/31/2019</em></h4>
+<h4 class="date"><em>6/3/2019</em></h4>
 
 </div>
 
@@ -289,7 +289,7 @@ Message
 Rmd
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/KaiqianZhang/statistical-inference/blob/5c49135a3b1c88bda543c955fbfcd3ccd0a85233/analysis/poisson.Rmd" target="_blank">5c49135</a>
+<a href="https://github.com/KaiqianZhang/statistical-inference/blob/5c49135a3b1c88bda543c955fbfcd3ccd0a85233/analysis/chisquare.Rmd" target="_blank">5c49135</a>
 </td>
 <td style="text-align:left;">
 kaiqian
@@ -301,52 +301,16 @@ kaiqian
 add two more new dist
 </td>
 </tr>
-<tr>
-<td style="text-align:left;">
-html
-</td>
-<td style="text-align:left;">
-<a href="https://cdn.rawgit.com/KaiqianZhang/statistical-inference/7cd1b2c0f41b507e77ecf2fff4b961d4b3638079/docs/poisson.html" target="_blank">7cd1b2c</a>
-</td>
-<td style="text-align:left;">
-kaiqian
-</td>
-<td style="text-align:left;">
-2019-05-31
-</td>
-<td style="text-align:left;">
-Build site.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Rmd
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/KaiqianZhang/statistical-inference/blob/3cf4e68add921ba2688be45dbbe7bdd44ecd768b/analysis/poisson.Rmd" target="_blank">3cf4e68</a>
-</td>
-<td style="text-align:left;">
-kaiqian
-</td>
-<td style="text-align:left;">
-2019-05-31
-</td>
-<td style="text-align:left;">
-add first distribution poisson
-</td>
-</tr>
 </tbody>
 </table>
 </ul>
 <p></details></p>
 <hr />
 <ul>
-<li><p><code>Recursion relation</code>: if <span class="math inline">\(X\)</span> is Poisson(<span class="math inline">\(\lambda\)</span>), then <span class="math display">\[
-P(X = x+1) = \frac{\lambda}{x+1}P(X=x),
-\]</span> starting from <span class="math inline">\(P(X=0) = e^{-\lambda}\)</span>.</p></li>
-<li><p><code>Hwang theorem</code>: Let <span class="math inline">\(g(x)\)</span> be a function with <span class="math inline">\(-\infty &lt; \text{E}g(X) &lt; \infty\)</span> and <span class="math inline">\(-\infty &lt; g(-1) &lt; \infty\)</span>. Then if <span class="math inline">\(X\sim \text{Poisson}(\lambda)\)</span>, <span class="math display">\[
-\text{E}(\lambda g(X)) = \text{E}(Xg(X-1)). 
-\]</span></p></li>
+<li><p>The mean of a <span class="math inline">\(\chi_p^2\)</span> is the degree of freedom <span class="math inline">\(p\)</span>.</p></li>
+<li><p>Let <span class="math inline">\(\chi_p^2\)</span> denote a chi squared random variable with p degrees of freedom. For any function <span class="math inline">\(h(x)\)</span>, <span class="math display">\[
+\text{E}h(\chi_p^2) = p * \text{E}(\frac{h(\chi_{p+2}^2)}{\chi_{p+2}^2})
+\]</span> provided the expectations exist.</p></li>
 </ul>
 <div id="session-information" class="section level2">
 <h2>Session information</h2>

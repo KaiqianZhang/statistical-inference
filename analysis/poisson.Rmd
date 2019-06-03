@@ -13,6 +13,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - `Recursion relation`: if $X$ is Poisson($\lambda$), then 
 $$
-P(X = x+1) = \frac{\lambda}{x+1}P(X=x).
+P(X = x+1) = \frac{\lambda}{x+1}P(X=x),
 $$
+starting from $P(X=0) = e^{-\lambda}$.
+
+- `Hwang theorem`: Let $g(x)$ be a function with $-\infty < \text{E}g(X) < \infty$ and $-\infty < g(-1) < \infty$. Then if $X\sim \text{Poisson}(\lambda)$,
+$$
+\text{E}(\lambda g(X)) = \text{E}(Xg(X-1)). 
+$$
+
 

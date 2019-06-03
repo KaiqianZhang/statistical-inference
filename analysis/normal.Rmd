@@ -1,0 +1,21 @@
+---
+title: "Normal distribution"
+author: "Kaiqian Zhang"
+date: "6/3/2019"
+output:
+  workflowr::wflow_html:
+    toc: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+- `Stein's Lemma` Let $X\sim \text{N}(\theta, \sigma^2)$, and let $g$ be a differentiable function satisfying $\text{E}[g'(X)] < \infty$. Then 
+
+$$
+\text{E}[g(X)(X-\theta)] = \sigma^2\text{E}g'(X).
+$$
+
+This lemma is used for calculation of higher-order moments for normal distributions.
+

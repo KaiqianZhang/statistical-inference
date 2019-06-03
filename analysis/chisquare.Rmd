@@ -1,0 +1,21 @@
+---
+title: "Chi square distribution"
+author: "Kaiqian Zhang"
+date: "6/3/2019"
+output:
+  workflowr::wflow_html:
+    toc: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+- The mean of a $\chi_p^2$ is the degree of freedom $p$.
+
+- Let $\chi_p^2$ denote a chi squared random variable with p degrees of freedom. For any function $h(x)$,
+$$
+\text{E}h(\chi_p^2) = p * \text{E}(\frac{h(\chi_{p+2}^2)}{\chi_{p+2}^2})
+$$
+provided the expectations exist.
+

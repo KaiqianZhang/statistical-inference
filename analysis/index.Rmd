@@ -12,4 +12,9 @@ Welcome to my website for statistical inference.
 
 - [Poisson distribution](poisson.html)
 
+- [Normal distribution](normal.html)
+
+- [Chi sqaure distribution](chisquare.html)
+
+
 

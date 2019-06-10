@@ -12,7 +12,7 @@
 <meta name="author" content="Kaiqian Zhang" />
 
 
-<title>Normal distribution</title>
+<title>Negative binomial distribution</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -319,7 +319,7 @@ div.section {
 
 
 
-<h1 class="title toc-ignore">Normal distribution</h1>
+<h1 class="title toc-ignore">Negative binomial distribution</h1>
 <h4 class="author">Kaiqian Zhang</h4>
 <h4 class="date">6/3/2019</h4>
 
@@ -492,7 +492,7 @@ Message
 Rmd
 </td>
 <td>
-<a href="https://github.com/KaiqianZhang/statistical-inference/blob/da5c4800770c8eb08fed4257985c7e3e6c681e23/analysis/normal.Rmd" target="_blank">da5c480</a>
+<a href="https://github.com/KaiqianZhang/statistical-inference/blob/da5c4800770c8eb08fed4257985c7e3e6c681e23/analysis/negbinom.Rmd" target="_blank">da5c480</a>
 </td>
 <td>
 kaiqian
@@ -504,40 +504,6 @@ kaiqian
 add expectation stuff
 </td>
 </tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/KaiqianZhang/statistical-inference/2b2a9f45b3cb0a49ee307a83dafa309953eb7412/docs/normal.html" target="_blank">2b2a9f4</a>
-</td>
-<td>
-kaiqian
-</td>
-<td>
-2019-06-03
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-Rmd
-</td>
-<td>
-<a href="https://github.com/KaiqianZhang/statistical-inference/blob/5c49135a3b1c88bda543c955fbfcd3ccd0a85233/analysis/normal.Rmd" target="_blank">5c49135</a>
-</td>
-<td>
-kaiqian
-</td>
-<td>
-2019-06-03
-</td>
-<td>
-add two more new dist
-</td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -546,19 +512,10 @@ add two more new dist
 </div>
 </div>
 <ul>
-<li><p>important integral for normal distribution <span class="math display">\[
-\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}e^{-z^2/2}dz = 1.
+<li><p><code>Hwang theorem</code>: Let <span class="math inline">\(g(x)\)</span> be a function with <span class="math inline">\(-\infty &lt; \text{E}g(X) &lt; \infty\)</span> and <span class="math inline">\(-\infty &lt; g(-1) &lt; \infty\)</span>. Then if <span class="math inline">\(X\sim \text{Negative binomial}(r, p)\)</span>, <span class="math display">\[
+\text{E}[(1-p)g(X)] = \text{E}[\frac{X}{r+X-1}g(X-1)].
 \]</span></p></li>
-<li><p><code>Stein's Lemma</code> Let <span class="math inline">\(X\sim \text{N}(\theta, \sigma^2)\)</span>, and let <span class="math inline">\(g\)</span> be a differentiable function satisfying <span class="math inline">\(\text{E}[g&#39;(X)] &lt; \infty\)</span>. Then</p></li>
-</ul>
-<p><span class="math display">\[
-\text{E}[g(X)(X-\theta)] = \sigma^2\text{E}g&#39;(X).
-\]</span> This lemma is used for calculation of higher-order moments for normal distributions.</p>
-<ul>
-<li><p>The ratio of two independent standard normal random variables is a Cauchy random variable.</p></li>
-<li><p>Let <span class="math inline">\(X\sim \text{N}(\mu, \sigma^2)\)</span> and <span class="math inline">\(Y\sim \text{N}(\gamma, \tau^2)\)</span> be indenpendent normal random varialbes. Then <span class="math display">\[
-X+Y \sim \text{N}(\mu+\gamma, \sigma^2+\tau^2).
-\]</span></p></li>
+<li><p>Negative binomial<span class="math inline">\((r,p)\)</span> converges to Poisson(<span class="math inline">\(\lambda\)</span>) as <span class="math inline">\(r \to \infty\)</span>, <span class="math inline">\(p \to 1\)</span>, and <span class="math inline">\(r(1-p) \to \lambda\)</span>.</p></li>
 </ul>
 <br>
 <p>

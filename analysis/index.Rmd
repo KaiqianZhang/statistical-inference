@@ -14,7 +14,15 @@ Welcome to my website for statistical inference.
 
 - [Normal distribution](normal.html)
 
-- [Chi sqaure distribution](chisquare.html)
+- [Chi square distribution](chisquare.html)
 
+- [Negative binomial distribution](negbinom.html)
+
+- [Binomial distribution](binomial.html)
+
+
+## Statistics
+
+- [Expextation, variance, covariance, and correlation](expectation-variance.html)
 
 

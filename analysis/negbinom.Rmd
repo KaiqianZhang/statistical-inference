@@ -1,0 +1,20 @@
+---
+title: "Negative binomial distribution"
+author: "Kaiqian Zhang"
+date: "6/3/2019"
+output:
+  workflowr::wflow_html:
+    toc: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+- `Hwang theorem`: Let $g(x)$ be a function with $-\infty < \text{E}g(X) < \infty$ and $-\infty < g(-1) < \infty$. Then if $X\sim \text{Negative binomial}(r, p)$,
+$$
+\text{E}[(1-p)g(X)] = \text{E}[\frac{X}{r+X-1}g(X-1)].
+$$
+
+- Negative binomial$(r,p)$ converges to Poisson($\lambda$) as $r \to \infty$, $p \to 1$, and $r(1-p) \to \lambda$.
+

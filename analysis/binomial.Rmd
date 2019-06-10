@@ -1,0 +1,19 @@
+---
+title: "Binomial distribution"
+author: "Kaiqian Zhang"
+date: "6/10/2019"
+output:
+  workflowr::wflow_html:
+    toc: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+* Generalization of binomial distribution: `beta-binomial hierarchy`
+
+$$
+P \sim \text{beta}(\alpha, \beta)\\
+X|P \sim \text{binomial}(P)
+$$

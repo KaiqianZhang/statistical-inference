@@ -22,4 +22,18 @@ $$
 \text{E}(\lambda g(X)) = \text{E}(Xg(X-1)). 
 $$
 
+- Negative binomial$(r,p)$ converges to Poisson($\lambda$) as $r \to \infty$, $p \to 1$, and $r(1-p) \to \lambda$. A generalization of Poisson distribution is Poisson-gamma hierarchy, which is essentially negative binomial distribution. So this hierarchy
 
+$$
+\Lambda \sim \text{gamma}(\alpha, \beta)\\
+Y|\Lambda \sim \text{Poisson}(\Lambda),
+$$
+then 
+$$
+Y \sim \text{negative binomial(.)}.
+$$
+
+- If $X\sim \text{Poisson}(\theta)$ and $Y\sim \text{Poisson}(\lambda)$, and $X$ and $Y$ are independent, then 
+$$
+X+Y \sim \text{Poisson}(\theta + \lambda).
+$$

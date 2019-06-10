@@ -1,0 +1,38 @@
+---
+title: "Expectation, variance, covariance, and correlation"
+author: "Kaiqian Zhang"
+date: "6/10/2019"
+output:
+  workflowr::wflow_html:
+    toc: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Expectation
+
+* $\text{E}X = \text{E}[\text{E}[X|Y]]$.
+
+* Let $X$ and $Y$ be independent random variables. Let $g(x)$ be a function only of $x$ and $h(y)$ be a function only of $y$. Then
+
+$$
+\text{E}[g(X)h(Y)] = \text{E}[g(X)]\text{E}[h(Y)].
+$$
+
+## Variance
+
+* $\text{Var}(aX+bY) = a^2 \text{Var}X + b^2 \text{Var} Y + 2ab\text{Cov}(X,Y)$.
+
+* $\text{Var(X)} = \text{E}[\text{Var}(X|Y)] + \text{Var}(\text{E}[X|Y])$.
+
+## Covariance
+
+* Definition: $\text{Cov}(X,Y) = \text{E}[(X-\mu_X)(Y-\mu_Y)]$.
+
+* $\text{Cov}(X,Y) = \text{E}XY - \text{E}X \text{E}Y$.
+
+## Correlation
+
+* Definition: $\rho_{XY} = \frac{\text{Cov}(X,Y)}{\sigma_X \sigma_Y}$.

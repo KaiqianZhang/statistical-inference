@@ -11,13 +11,31 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-- The mean of a $\chi_p^2$ is the degree of freedom $p$.
+- Special case of gamma distribution.
+
+- The mean of a $\chi_p^2$ is its degree of freedom $p$.
 
 - Let $\chi_p^2$ denote a chi squared random variable with p degrees of freedom. For any function $h(x)$,
 $$
 \text{E}h(\chi_p^2) = p * \text{E}(\frac{h(\chi_{p+2}^2)}{\chi_{p+2}^2})
 $$
 provided the expectations exist.
+
+- If $Z\sim \text{N}(0,1)$, then $Z^2\sim \chi_1^2$; that is, the square of a standard normal random variable is a chi squared random variable.
+
+- If $X_1, \dots, X_n$ are independent and $X_i \sim \chi_{p_i}^2$, then $X_1+\dots+X_n \sim \chi_{p_1+\dots+p_n}^2$; that is, independent chi squared variables add to a chi squared variable, and the degrees of freedom also add.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
